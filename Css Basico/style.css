@@ -19,3 +19,9 @@ p.verso{
  a:hover{
     font-size: 30px;
  }
+ img {
+   border-radius: 50%;
+   width: 100px; /* ajuste o tamanho conforme necessário */
+   height: 100px; /* ajuste o tamanho conforme necessário */
+ }
+ 
