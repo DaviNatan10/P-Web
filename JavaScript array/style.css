@@ -9,3 +9,26 @@ div.cerveja{
     font-weight: 600;
     width: fit-content;
 }
+
+#botaoCarregar{
+    background-color: #4CAF50; 
+    color: aqua; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+}
+#botaoOrdenar {
+    background-color: #008CBA;
+    color: azure;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#botaoEmbaralhar {
+    background-color: #f44336;
+    color: greenyellow;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
