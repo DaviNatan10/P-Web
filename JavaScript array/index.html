@@ -3,7 +3,7 @@
 <html>   
 
    <head>
-
+      <title>JavaScript Array </title>
       <meta charset="UTF-8">   
       <link href="style.css" rel="stylesheet" >   
 
@@ -13,7 +13,11 @@
 
    <body>
 
-      <div id="meu amor"><button id="botaoCarregar">Carregando cervejas...</button></div>            
+      <div id="meu-amor">
+         <button id="botaoCarregar">Carregando cervejas...</button>
+         <button id="botaoOrdenar">Mostrar cervejas ordenadas</button>
+      
+      </div>            
 
    </body>   
 
@@ -35,21 +39,21 @@
 
       function carregarDiv(){
 
-         let div = document.getElementById("meu amor")
-
-         //let cervejasHtml = [`<h1>${cervejas[0]}</h1>`,`<h1>${cervejas[1]}</h1>`, `<h1>${cervejas[2]}</h1>`] 
-
+         let div = document.getElementById("meu-amor")
          let cervejasHtml = cervejas.map(transformar) 
-
          div.innerHTML = `${cervejasHtml.join("\n")}`
 
       }
 
-      
+      function ordenarCervejas(){
+         cervejas.sort(); //Ordem Alfabetica
+         carregarDiv(); //Usa-se para mostrar as cerveja novamente apos organizarlas utilizando o .sort
+      }
 
       let botao = document.getElementById("botaoCarregar")
-
-      botao.addEventListener("click", carregarDiv)                 
+      botao.addEventListener("click", carregarDiv)      
+      let botaoOrdenar = document.getElementById("botaoOrdenar")
+      botaoOrdenar.addEventListener("click", ordenarCervejas)           
 
    </script>
 
