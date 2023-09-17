@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>   
+
+   <head>
+        <meta charset="UTF-8">      
+   </head>
+
+   <body>
+
+    <a href="javascript:carregarDiv(cervejas)">Carregando cervejas...</a> 
+    <br>
+    <a href="javascript:ordenarVetor()">Ordenar cervejas...</a> 
+    <br>
+    <a href="javascript:embaralharVetor()">Embaralhar cervejas...</a> 
+
+    <div id="meu amor"></div>            
+
+   </body>   
+
+   <script>
+
+        let cervejas = ["Guiness", "Desperados", "Becks"]  
+
+        const carregarDiv = (beer) => {
+
+            const div = document.getElementById("meu amor")
+
+            const cervejasHtml = beer.map( item => `<h1>${item}</h1>` ) 
+
+            div.innerHTML = `${cervejasHtml.join("\n")}`
+
+        }
+
+        const ordenarVetor = () => {
+            carregarDiv(cervejas.sort())
+        }
+
+        const embaralharVetor = () =>  {
+            carregarDiv(cervejas.sort(()=> Math.random() - 0.5))
+        }
+
+        let botao = document.getElementById("botaoCarregar")
+
+        botao.addEventListener("click", () => {
+            carregarDiv(cervejas); 
+        });                
+
+   </script>
+
+</html>
