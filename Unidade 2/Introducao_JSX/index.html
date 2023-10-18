@@ -4,65 +4,54 @@
 
    <head>
 
-      <title>ReactZero</title>      
+      <title>React Um</title>      
 
    </head>
 
    <body>
 
-      <div id="app">
-
-      
+      <div id="app">      
 
       </div>
-
-
 
       <script src="libs/react.js"></script>
 
       <script src="libs/react-dom.js"></script>
 
-      
-
-      <script>
+      <script src="libs/babel.js"></script>
 
       
+
+      <script type="text/babel">
 
 ReactDOM.render(
 
-   React.createElement(
+<div id="app">
 
-      'table',
+   <table id="tabela" border="1">
 
-      {id: 'tabela', border:'1'},
+      <thead>
 
-      React.createElement(
+         <tr><th>Nome</th><th>Marca</th></tr>
 
-         'tr',
+      </thead>
 
-         null,                  
+      <tbody>
 
-         React.createElement('th', null, 'Nome'),
+         <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
 
-         React.createElement('th', null, 'Marca')
+      </tbody>
 
-      ),
+   </table>
 
-      React.createElement(
+</div>
 
-         'tr',
+,
 
-         null,                  
-
-         React.createElement('td', null, 'Havana'),
-
-         React.createElement('td', null, 'Engenho Anísio Santiago')
-
-      )
-
-   ),
-
-   document.getElementById("app"))
+document.getElementById("app"))
+      
       </script>
-   </body>
+
+</body>
+
 </html>
