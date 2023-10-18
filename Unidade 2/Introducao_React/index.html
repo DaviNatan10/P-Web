@@ -28,19 +28,40 @@
 
       
 
-         ReactDOM.render(
-            React.createElement(
-               'h1',
-               {id: 'my-heading'},
-               React.createElement(
-                  'span',
-                  null,
-                  'React ',
-                  React.createElement('em', null, 'é muito'),
-               ),
-               ' massa!'
-            ),
-            document.getElementById("app"))
+ReactDOM.render(
+
+React.createElement(
+   'table',
+   {id: 'tabela', border:'1'},
+
+   React.createElement(
+      'tr',
+      null,                  
+      React.createElement('th', null, 'Nome Do Jogo'),
+      React.createElement('th', null, 'Ano de Criação')
+   ),
+   React.createElement(
+      'tr',
+      null,                  
+      React.createElement('td', null, 'Free Fire'),
+      React.createElement('td', null, '2017')
+   ),
+   React.createElement(
+      'tr',
+      null,                  
+      React.createElement('td', null, 'Counter Strike Offensive Global'),
+      React.createElement('td', null, '2012')
+   ),
+   React.createElement(
+      'tr',
+      null,                  
+      React.createElement('td', null, 'Point Blank'),
+      React.createElement('td', null, '2008')
+   )
+
+),
+
+document.getElementById("app"))
       </script>
    </body>
 </html>
