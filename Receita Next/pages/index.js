@@ -16,7 +16,7 @@ export default function Home(){
 
  }
 
- export default function Web(){
+ export  function Web(){
 
     return (
         <div>
