@@ -1,3 +1,5 @@
+import { Button } from "./buttom"
+
 export default function Home(){
 
     return (
@@ -7,6 +9,11 @@ export default function Home(){
           <h2>
 
             Viva Santana!
+
+
+            <p>hello</p> 
+            <br/>
+            <Button>Button</Button>
 
           </h2>
 
